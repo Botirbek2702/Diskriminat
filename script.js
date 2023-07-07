@@ -5,6 +5,7 @@ const d =document.querySelector('.d')
 
 
 
+
 let A = +prompt("A ni kiriting ","")
 let B = +prompt("B ni kiriting ","")
 let C = +prompt("C ni kiriting ","")
@@ -20,7 +21,15 @@ let j = {
     B:B,
     C:C
 }
+function lit() {
+    let i = j.B*j.B-4*j.A*j.C;
+    i = Math.sqrt(i)
+    d.textContent = i   
+}
+lit()
 
-let i = j.B*j.B-4*j.A*j.C;
-i = Math.sqrt(i)
-d.textContent = i
+
+
+
+
+
